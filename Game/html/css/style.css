@@ -1,0 +1,277 @@
+@import '../js/lib/bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    background-color:rgba(0,0,0,0);
+    /* background-color:rgba(0,0,0,255); */
+    overflow:hidden;
+
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    border-style: none;
+}
+
+.top {
+    pointer-events: auto;
+    z-index: 100;
+}
+
+/* ------
+   Carousel
+   ------ */
+
+.carousel-indicators {
+    bottom:30%;
+    visibility: hidden;
+}
+
+/* ------
+   Font
+   ------ */
+
+@font-face {
+    font-family: Chunkfive;
+    src: url("Chunkfive.otf") format("opentype");
+}
+
+p {
+    font-family: Chunkfive;
+    font-size: 1.4%;
+    color:rgba(236,236,236,255)
+}
+
+h2 {
+    font-size: 3.1%;
+}
+
+.list-group-item {
+    font-size: 1.4%;
+    pointer-events:auto;
+}
+
+.menu-button p {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+li.title h3 {
+  color: white;
+}
+
+/* ------
+   Tooltips
+   ------ */
+
+.popover {
+    font-size: 100%;
+}
+
+.popover-title {
+    font-size: 2.035%;
+}
+
+.popover-content {
+    font-size: .9%;
+}
+
+.popover {
+    max-width: 27.5%;
+}
+
+/* ----
+   Game list
+   ---- */
+
+.game-list {
+    font-family: Verdana, Geneva, sans-serif;
+    -webkit-text-stroke: 0.4px;
+
+    overflow-y:'scroll';
+    height:'100%';
+        
+    pointer-events: auto;
+    font-size: 1.1%;
+    float:bottom;
+    margin:0;
+    width: 100%;
+
+    background-color: rgba(28, 30, 34, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+/* ----
+   Chat
+   ---- */
+
+div .chat-line {
+    font-family: Verdana, Geneva, sans-serif;
+    -webkit-text-stroke: 0.4px;
+        
+    pointer-events: none;
+    font-size: 1.1%;
+    -webkit-text-stroke: 0.3px;
+    float:bottom;
+    margin:0;
+    width: 100%;
+
+    border: none;
+    margin: 0px;
+    padding: 1px;
+    border-radius: 0;
+    padding-left: 7px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    padding-bottom: 3px;
+    margin-bottom: -3px;
+}
+
+.chat-line:last-child {
+    padding-bottom: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-background {
+    background-color: rgba(28, 30, 34, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+.chatMessage-enter {
+    opacity:0.01;
+    transition: opacity .5s ease-in;
+}
+
+.chatMessage-leave {
+    opacity:0.01;
+    transition: opacity .5s ease-in;
+}
+
+.chatMessage-enter.chatMessage-enter-active {
+    opacity:1;
+}
+
+input {
+    user-select: text;
+    -webkit-user-select: text;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* ------
+   Menu
+   ------ */
+
+td.menu-cell-dropdown button {
+    width: 100%;
+}
+
+td.menu-cell-dropdown div {
+    width: 100%;
+}
+
+td.menu-cell-dropdown .dropdown-menu {
+    width: 100%;
+}
+
+.menu-description {
+    font-size: 115%;
+}
+
+/* ------
+   Dropdown
+   ------ */
+
+.dropdown-menu {
+    width: 190%;
+}
+
+.disabled-item a span {
+    color: #c8c8c8;
+    opacity: .5;
+}
+
+div.scroll-dropdown ul {
+    overflow-y: scroll;
+    height: 500%;
+}
+
+/* ------
+   Button
+   ------ */
+
+button {
+    user-select: none;
+    -webkit-user-select: none;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+button.UiButton {
+    padding: 0;
+    border: none;
+    background: none;
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-position: left top;
+    
+    float:left;
+    position:absolute;
+    left:0;
+}
+
+button.UiButton:hover {
+    background-position: left center;
+}
+button.UiButton:active {
+    background-position: left bottom;
+}
+
+button { outline: none; }
+
+
+/* ----------
+   Map Picker
+   ---------- */
+
+.modal-content {
+    width: 100%;
+}
+
+.modal-primary {
+    margin-left: 15%;
+    margin-right: 40%;
+}
+
+
+/* -----
+   Image
+   ----- */
+
+div.UiImage {
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: none;
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-position: left top;
+
+    float:left;
+    position:absolute;
+    left:0;
+}
+
+image { outline: none; }
